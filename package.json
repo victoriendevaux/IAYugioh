@@ -1,0 +1,19 @@
+{
+  "name": "yugioh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "yugioh.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victoriendevaux/IAYugioh.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victoriendevaux/IAYugioh/issues"
+  },
+  "homepage": "https://github.com/victoriendevaux/IAYugioh#readme"
+}
