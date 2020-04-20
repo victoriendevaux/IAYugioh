@@ -33,8 +33,7 @@ app.post('/', async (req, res) => {
         function mean(array){
             if (array.length == 0)
                 return null;
-            var sum = array.reduce(function(a, b) { return a + b; });
-            var avg = sum / array.length;
+            return pickAction()
             return avg;
         }
 
