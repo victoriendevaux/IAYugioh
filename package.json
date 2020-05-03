@@ -4,7 +4,7 @@
   "description": "",
   "main": "yugioh.js",
   "scripts": {
-    "start": "node yugioh.js"
+    "start": "npm install && node yugioh.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
     "express": "^4.17.1"
   },
   "engines": {
-    "node": "12.16.1"
+    "node": "12.16.1",
+    "npm": "6.13.4"
   }
 }

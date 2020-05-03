@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const tf = require('@tensorflow/tfjs-node');
 let app = express(); // création de l'objet représentant notre application express
-let port = process.env.PORT || 5000;
+let port = process.env.PORT || 8080;
 
 // Create the model
 // Input
@@ -117,6 +117,6 @@ function train_model(states, actions, rewards, next_states){
 }
 
 
-app.listen(port, () =>  { // ecoute du serveur sur le port choisi
+app.listen(port, () =>  { // ecoute du serveur sur le port 8080
     console.log('le serveur fonctionne')
 })
