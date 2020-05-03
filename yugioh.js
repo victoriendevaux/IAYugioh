@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const tf = require('@tensorflow/tfjs-node');
 let app = express(); // création de l'objet représentant notre application express
-let port = 8080;
+let port = process.env.PORT || 8080;
 
 // Create the model
 // Input
