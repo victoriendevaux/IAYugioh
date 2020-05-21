@@ -87,7 +87,7 @@ async function pickAction(st, eps)
 
         x = tf.tensor1d(monstersEnnemies, 'int32');
         y = tf.tensor1d(monstersPlayer, 'int32');
-        result = tf.lessEqual(x, y);
+        result = tf.less(x, y);
 
         console.log("compare value  "+  result);
 
