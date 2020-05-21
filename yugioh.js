@@ -18,13 +18,18 @@ let model_optimizer = tf.train.adam(0.01);
 
 app.use(bodyParser.json());
 
-app.post('/', (req, res) => {
+app.post('/', async (req, res) => {
    const monstres = req.body.tabmonstres; // récupération des variables du body
-    res.send(pickAction(monstres, 0.0));
+    result = await pickAction(monstres, 1.1);
+    console.log("resultat    "+result);
+    console.log("resultat    "+result["monstreAttaque"]);
+    console.log("resultat    "+result["monstreAttaquant"]);
+    console.log("resultat    "+result["action"]);
+    res.send(result);
 });
 
 // Pick an action eps-greedy
-function pickAction(st, eps)
+async function pickAction(st, eps)
 {
     let st_tensor = tf.tensor([st]);
     let act;
@@ -43,6 +48,69 @@ function pickAction(st, eps)
         return {"monstreAttaque": monstreAttaque, "monstreAttaquant": monstreAttaquant, "action": act};
     }
     else {
+        monstreAttaque = null;
+        monstreAttaquant=st[0];
+        action = "RIEN";
+        monstersPlayer=[]
+        monstersEnnemies=[]
+
+
+        for(i=0; i<5;i++) {
+
+            if (st[0].monstre == null) {
+                monstersPlayer[i] = 99999;
+            } else {
+                if (st[0].position === "attaque") {
+                    monstersPlayer[i] = st[0].atk;
+                } else {
+                    monstersPlayer[i] = st[0].def;
+                }
+            }
+        }
+
+        for(i=0; i<5;i++) {
+            valueIndex = i+ 5;
+            if (st[valueIndex].monstre == null) {
+                monstersEnnemies[i]=99999;
+
+            } else {
+                if (st[valueIndex].position === "attaque") {
+                    monstersEnnemies[i]=st[valueIndex].atk;
+                } else {
+                    monstersEnnemies[i]=st[valueIndex].def;
+                }
+            }
+        }
+
+        console.log("monster in attaque mode player  "+  monstersPlayer);
+        console.log("monster in defense mode for monster attack  "+  monstersEnnemies);
+
+        x = tf.tensor1d(monstersEnnemies, 'int32');
+        y = tf.tensor1d(monstersPlayer, 'int32');
+        result = tf.lessEqual(x, y);
+
+        console.log("compare value  "+  result);
+
+        resultBoolean = Promise.resolve(result.data());
+        console.log("compare value result boolean  "+  resultBoolean);
+
+        return await resultBoolean.then(function(val) {
+            console.log(val);
+            for (index=0; index<5; index++) {
+                if (val[index] === 1) {
+                    monstreAttaque = st[5+index];
+                    action = "ATTAQUER";
+                }
+            }
+
+            console.log(monstreAttaquant);
+            console.log(monstreAttaque);
+            console.log(action);
+            return {"monstreAttaque": monstreAttaque, "monstreAttaquant": monstreAttaquant, "action": action};
+        });
+
+
+        /*
         let result = model.predict(st_tensor);
         let argmax = result.argMax(1);
 
@@ -50,9 +118,14 @@ function pickAction(st, eps)
         act = argmax.buffer().values[0];
         argmax.dispose();
         result.dispose();
+
+        st_tensor.dispose();
+        return act; */
     }
-    st_tensor.dispose();
-    return act;
+}
+
+function promiseResolveSystemAttack(atk, def, act){
+
 }
 
 
