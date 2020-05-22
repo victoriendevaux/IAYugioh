@@ -19,7 +19,9 @@ let model_optimizer = tf.train.adam(0.01);
 app.use(bodyParser.json());
 
 app.post('/', async (req, res) => {
-   const monstres = req.body.tabmonstres; // récupération des variables du body
+    console.log("body    "+req.body);
+    console.log("body content    "+req.body.tabmonstres);
+    const monstres = req.body.tabmonstres; // récupération des variables du body
     result = await pickAction(monstres, 1.1);
     console.log("resultat    "+result);
     console.log("resultat    "+result["monstreAttaque"]);
