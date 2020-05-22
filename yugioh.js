@@ -19,15 +19,14 @@ let model_optimizer = tf.train.adam(0.01);
 app.use(bodyParser.json());
 
 app.post('/', async (req, res) => {
-    console.log("body    "+req.tabmonstres);
     console.log("body    "+req.body);
     console.log("body content    "+req.body.tabmonstres);
     const monstres = req.body.tabmonstres; // récupération des variables du body
     result = await pickAction(monstres, 1.1);
     console.log("resultat    "+result);
-    console.log("resultat    "+result["monstreAttaque"]);
-    console.log("resultat    "+result["monstreAttaquant"]);
-    console.log("resultat    "+result["action"]);
+    console.log("resultat def   "+result["monstreAttaque"]);
+    console.log("resultat atk   "+result["monstreAttaquant"]);
+    console.log("resultat act   "+result["action"]);
     res.send(result);
 });
 
@@ -60,7 +59,7 @@ async function pickAction(st, eps)
 
         for(i=0; i<5;i++) {
 
-            if (st[0].monstre == null) {
+            if (!st[0].monstre) {
                 monstersPlayer[i] = 99999;
             } else {
                 if (st[0].position === "attaque") {
@@ -73,7 +72,7 @@ async function pickAction(st, eps)
 
         for(i=0; i<5;i++) {
             valueIndex = i+ 5;
-            if (st[valueIndex].monstre == null) {
+            if (!st[valueIndex].monstre) {
                 monstersEnnemies[i]=99999;
 
             } else {
