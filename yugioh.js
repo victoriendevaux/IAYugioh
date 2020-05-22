@@ -19,6 +19,7 @@ let model_optimizer = tf.train.adam(0.01);
 app.use(bodyParser.json());
 
 app.post('/', async (req, res) => {
+    console.log("body    "+req.tabmonstres);
     console.log("body    "+req.body);
     console.log("body content    "+req.body.tabmonstres);
     const monstres = req.body.tabmonstres; // récupération des variables du body
