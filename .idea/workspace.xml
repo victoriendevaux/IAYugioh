@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be24d56c-7aeb-475c-b31a-325cb2d51248" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/experiment/dataset_test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/experiment/dataset_train.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/experiment/dataset_validate.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/experiment/experiment.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/experiment/experiment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experiment-online/dataset_test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experiment-online/dataset_train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experiment-online/dataset_validate.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experiment-online/experiment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experiment-online/experiment.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yugioh.js" beforeDir="false" afterPath="$PROJECT_DIR$/yugioh.js" afterDir="false" />
     </list>
@@ -34,46 +34,69 @@
         <counts>
           <entry key="css" value="1" />
           <entry key="gitignore" value="1" />
-          <entry key="html" value="1" />
-          <entry key="js" value="10" />
+          <entry key="html" value="2" />
+          <entry key="js" value="11" />
           <entry key="json" value="1" />
           <entry key="ts" value="7" />
-          <entry key="txt" value="4" />
+          <entry key="txt" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="HTML" value="1" />
+          <entry key="HTML" value="2" />
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="10" />
-          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="JavaScript" value="11" />
+          <entry key="PLAIN_TEXT" value="6" />
           <entry key="TypeScript" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="1106" />
-          <entry key="js" value="3279" />
+          <entry key="html" value="1120" />
+          <entry key="js" value="3327" />
           <entry key="json" value="43" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="1106" />
+          <entry key="HTML" value="1120" />
           <entry key="JSON" value="43" />
-          <entry key="JavaScript" value="3279" />
+          <entry key="JavaScript" value="3327" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yugioh.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="1816" column="19" lean-forward="true" selection-start-line="1816" selection-start-column="19" selection-end-line="1816" selection-end-column="19" />
+            <state relative-caret-position="357">
+              <caret line="141" selection-start-line="141" selection-end-line="141" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/experiment-online/dataset_test.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/experiment-online/experiment.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="314" lean-forward="true" selection-start-line="314" selection-end-line="314" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/experiment-online/experiment.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="596">
+              <caret line="1376" column="16" selection-start-line="1376" selection-start-column="16" selection-end-line="1376" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -82,7 +105,7 @@
         <entry file="file://$PROJECT_DIR$/experiment/experiment.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="596">
-              <caret line="297" column="15" lean-forward="true" selection-start-line="297" selection-start-column="15" selection-end-line="297" selection-end-column="15" />
+              <caret line="297" column="15" selection-start-line="297" selection-start-column="15" selection-end-line="297" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -100,7 +123,7 @@
         <entry file="file://$PROJECT_DIR$/experiment/dataset_test.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret column="1481" lean-forward="true" selection-start-column="1481" selection-end-column="1481" />
+              <caret column="1481" selection-start-column="1481" selection-end-column="1481" />
             </state>
           </provider>
         </entry>
@@ -124,15 +147,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -145,9 +159,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>_imported_test_set</find>
-      <find>predicted</find>
-      <find>validate</find>
       <find>exports</find>
       <find>e</find>
       <find>uniform</find>
@@ -173,8 +184,11 @@
       <find>range-selection</find>
       <find>to build a Neural Network copy</find>
       <find>type.train</find>
-      <find>train(</find>
       <find>train</find>
+      <find>train(</find>
+      <find>http://</find>
+      <find>https://ia-yugioh.herokuapp.com/</find>
+      <find>-0.5</find>
     </findStrings>
     <replaceStrings>
       <replace>0; 0</replace>
@@ -203,6 +217,7 @@
         <option value="$PROJECT_DIR$/experiment/experiment.html" />
         <option value="$PROJECT_DIR$/experiment/experiment.js" />
         <option value="$PROJECT_DIR$/yugioh.js" />
+        <option value="$PROJECT_DIR$/experiment-online/experiment.html" />
       </list>
     </option>
   </component>
@@ -241,7 +256,7 @@
             <path>
               <item name="IAYugioh" type="b2602c69:ProjectViewProjectNode" />
               <item name="IAYugioh" type="462c0819:PsiDirectoryNode" />
-              <item name="experiment" type="462c0819:PsiDirectoryNode" />
+              <item name="experiment-online" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -255,7 +270,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590944884866" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1591025032801" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../IOT Tp/tp-mqtt" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -265,6 +280,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\CARDON\Desktop\yugioh\IA_yugi\IAYugioh" />
       <recent name="C:\Users\CARDON\Desktop\yugioh\IA_yugi\IAYugioh\experiment" />
     </key>
   </component>
@@ -297,16 +313,15 @@
       <workItem from="1589215241768" duration="1044000" />
       <workItem from="1589870514640" duration="795000" />
       <workItem from="1590068793632" duration="38084000" />
-      <workItem from="1590849094866" duration="34444000" />
+      <workItem from="1590849094866" duration="43544000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97692000" />
+    <option name="totallyTimeSpent" value="106792000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20372751" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -384,7 +399,7 @@
     <entry file="file://$PROJECT_DIR$/experiment/dataset_test.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret column="1481" lean-forward="true" selection-start-column="1481" selection-end-column="1481" />
+          <caret column="1481" selection-start-column="1481" selection-end-column="1481" />
         </state>
       </provider>
     </entry>
@@ -440,14 +455,31 @@
     <entry file="file://$PROJECT_DIR$/experiment/experiment.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="596">
-          <caret line="297" column="15" lean-forward="true" selection-start-line="297" selection-start-column="15" selection-end-line="297" selection-end-column="15" />
+          <caret line="297" column="15" selection-start-line="297" selection-start-column="15" selection-end-line="297" selection-end-column="15" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/experiment-online/dataset_test.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/yugioh.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="1816" column="19" lean-forward="true" selection-start-line="1816" selection-start-column="19" selection-end-line="1816" selection-end-column="19" />
+        <state relative-caret-position="357">
+          <caret line="141" selection-start-line="141" selection-end-line="141" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment-online/experiment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="596">
+          <caret line="1376" column="16" selection-start-line="1376" selection-start-column="16" selection-end-line="1376" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment-online/experiment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="314" lean-forward="true" selection-start-line="314" selection-end-line="314" />
         </state>
       </provider>
     </entry>

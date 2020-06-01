@@ -32,6 +32,14 @@ app.get('/experiment', (req, res) => {
     res.sendFile(path.join(__dirname, "/experiment/experiment.html"));
 });
 
+app.get('/experimentjs-online', (req, res) => {
+    res.sendFile(path.join(__dirname, "/experiment-online/experiment.js"));
+});
+
+app.get('/experiment-online', (req, res) => {
+    res.sendFile(path.join(__dirname, "/experiment-online/experiment.html"));
+});
+
 app.post('/', async (req, res) => {
     console.log("body    " + req.body);
     console.log("body content    " + req.body.tabmonstres);
@@ -1739,7 +1747,7 @@ var _dropout = false;
 var _shuffle = true;
 // Brain hyperparameters
 const _params = {
-    libURI: "http://localhost:8080/experimentjs",
+    libURI: "https://ia-yugioh.herokuapp.com/experimentjs-online",
     //libURI: "https://franpapers.com/lib/neural-network-271117.js",
     lr: 0.05,
     // layers: [2, 1, 1],
